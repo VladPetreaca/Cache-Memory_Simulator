@@ -1,0 +1,11 @@
+----READMEEE-----
+	---Petreaca Vlad-Florin 323CB----
+
+-pentru inceput creez clasa abstracta si folosind conceptul de mostenire creez obiecte de tip Premium cu numele si numarul de accesari Basic si Premium citite din fisier
+-apoi creez interfata Cache si declar antetele functiilor get si add pentru a fi implementate in fiecare dintre clasese de memorii cache
+-apoi in functia main declar toate memoriile si avand numarul de operatii citit din fisier, vad pentru fiecare operatie de ce tip este.
+	Daca este ADD, adaug elementul in memomria principala sau o actualizez(si o sterg si din memorie)
+	Daca este GET, verific daca elementul se afla mai intai in memoria principala 
+	-daca se afla si in memoria cache, afisez din memoria cache si decrementez tipul de cerere dupa caz
+
+	*pentru memoria de tip LRU, folosesc sleep pentru a incetini putin programul deoarce,cand adaug la fiecare element de tip Premium cate un timestamp este posibil(functionand foarte repede)sa adauge acelasi timestamp la 2 sau mai multe elemente si cand va fi nevoie sa le sterg din cache nu se va elimina in ordinea care trebuie iar programul nu va functiona cum trebuie
